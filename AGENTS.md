@@ -10,6 +10,7 @@ Use a credit-efficient workflow: reuse verified context, inspect only affected c
 - Bug, button not working, unknown failure -> read `.skills/bug-triage.md`
 - Ambiguous, complex, underspecified, suspicious, or multi-path request -> read `.skills/clarification-gate.md`
 - Repeated workflow/pattern worth standardizing -> read `.skills/skill-evolution.md`
+- Performance measurement/logging -> read `.skills/performance-log.md`
 - Any code change that may affect existing behavior -> read `.skills/regression-guard.md`
 
 ## Clarify before execute
@@ -36,6 +37,6 @@ Always call out commands that may:
 Do not change transaction history semantics, average-cost accounting, holdings calculations, P/L logic, auth/session behavior, or market-data contracts unless explicitly required.
 
 ## Default execution
-Clarify if needed -> identify affected flow -> load only relevant skill -> edit smallest surface -> targeted test -> regression guard -> review diff -> one coherent commit.
+Clarify if needed -> identify affected flow -> load only relevant skill -> edit smallest surface -> targeted test -> regression guard -> review diff -> one coherent commit -> lightweight performance log.
 
 See `WORKFLOW-NOTE.md` for the visual map.
